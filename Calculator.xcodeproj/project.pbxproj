@@ -13,6 +13,9 @@
 		C589499D1D1140D8009B09F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C589499B1D1140D8009B09F0 /* Main.storyboard */; };
 		C589499F1D1140D8009B09F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C589499E1D1140D8009B09F0 /* Assets.xcassets */; };
 		C58949A21D1140D8009B09F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58949A01D1140D8009B09F0 /* LaunchScreen.storyboard */; };
+		C58949AB1D123A1F009B09F0 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C58949AA1D123A1F009B09F0 /* Calculator.m */; };
+		C58949AE1D123A37009B09F0 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C58949AD1D123A37009B09F0 /* Fraction.m */; };
+		C58949B11D12861E009B09F0 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58949B01D12861E009B09F0 /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		C589499E1D1140D8009B09F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C58949A11D1140D8009B09F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C58949A31D1140D8009B09F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C58949A91D123A1F009B09F0 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		C58949AA1D123A1F009B09F0 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		C58949AC1D123A37009B09F0 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		C58949AD1D123A37009B09F0 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		C58949AF1D12861E009B09F0 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		C58949B01D12861E009B09F0 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,10 @@
 		C58949911D1140D7009B09F0 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				C58949AC1D123A37009B09F0 /* Fraction.h */,
+				C58949AD1D123A37009B09F0 /* Fraction.m */,
+				C58949A91D123A1F009B09F0 /* Calculator.h */,
+				C58949AA1D123A1F009B09F0 /* Calculator.m */,
 				C58949951D1140D7009B09F0 /* AppDelegate.h */,
 				C58949961D1140D7009B09F0 /* AppDelegate.m */,
 				C58949981D1140D7009B09F0 /* ViewController.h */,
@@ -67,6 +80,8 @@
 				C58949A01D1140D8009B09F0 /* LaunchScreen.storyboard */,
 				C58949A31D1140D8009B09F0 /* Info.plist */,
 				C58949921D1140D7009B09F0 /* Supporting Files */,
+				C58949AF1D12861E009B09F0 /* InfoViewController.h */,
+				C58949B01D12861E009B09F0 /* InfoViewController.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -110,6 +125,7 @@
 				TargetAttributes = {
 					C589498E1D1140D7009B09F0 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = Q4J4FTC54J;
 					};
 				};
 			};
@@ -150,8 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C589499A1D1140D8009B09F0 /* ViewController.m in Sources */,
+				C58949AB1D123A1F009B09F0 /* Calculator.m in Sources */,
+				C58949B11D12861E009B09F0 /* InfoViewController.m in Sources */,
 				C58949971D1140D7009B09F0 /* AppDelegate.m in Sources */,
 				C58949941D1140D7009B09F0 /* main.m in Sources */,
+				C58949AE1D123A37009B09F0 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sds.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -276,10 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sds.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -15,6 +15,7 @@
 @implementation AppDelegate
 
 
+//앱이 구동됐을때 처음 실행되는 메서드
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
