@@ -231,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="203" y="-30"/>
         </scene>
-        <!--Info View Controller-->
+        <!--Third View Controller-->
         <scene sceneID="fU4-mH-k6I">
             <objects>
-                <viewController id="q6u-bs-frz" customClass="InfoViewController" sceneMemberID="viewController">
+                <viewController id="q6u-bs-frz" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HSl-vA-k6h"/>
                         <viewControllerLayoutGuide type="bottom" id="Hct-bR-zjL"/>
@@ -256,6 +256,15 @@
                                 </state>
                                 <connections>
                                     <segue destination="jcK-35-Ibp" kind="unwind" unwindAction="unwindToViewController:" id="Ste-Mw-gat"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ouR-UR-Qff">
+                                <rect key="frame" x="113" y="162" width="94" height="30"/>
+                                <state key="normal" title="Change Color">
+                                    <color key="titleColor" red="0.99550908803939819" green="0.089599452912807465" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeColor2:" destination="q6u-bs-frz" eventType="touchUpInside" id="s7n-jF-SE8"/>
                                 </connections>
                             </button>
                         </subviews>

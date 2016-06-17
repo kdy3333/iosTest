@@ -10,6 +10,7 @@
 #import "Fraction.h"
 #import "Calculator.h"
 #import "InfoViewController.h"
+#import "ThirdViewController.h"
 
 @interface ViewController ()
 
@@ -186,11 +187,17 @@
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     NSLog(@"segue ID = %@", segue.identifier);
-    if([segue.identifier isEqualToString:@"view2"])
+    if([segue.identifier isEqualToString:@"view1"])
     {
         InfoViewController *infoview = [segue destinationViewController];
         
-       infoview.myString = @"Hello!!!!";
+  //     infoview.myString = @"Hello!!!!";
+    }else if ([segue.identifier isEqualToString:@"view2"]){
+        ThirdViewController *thirdView = [segue destinationViewController];
+        [thirdView changeColorFunc: ^(UIColor *newColor)
+        {
+            [self.view setBackgroundColor:newColor];
+        }];
     }
 }
 

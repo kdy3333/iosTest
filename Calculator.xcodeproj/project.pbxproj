@@ -16,6 +16,7 @@
 		C58949AB1D123A1F009B09F0 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C58949AA1D123A1F009B09F0 /* Calculator.m */; };
 		C58949AE1D123A37009B09F0 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C58949AD1D123A37009B09F0 /* Fraction.m */; };
 		C58949B11D12861E009B09F0 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58949B01D12861E009B09F0 /* InfoViewController.m */; };
+		C58949B41D13B216009B09F0 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58949B31D13B216009B09F0 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		C58949AD1D123A37009B09F0 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		C58949AF1D12861E009B09F0 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		C58949B01D12861E009B09F0 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		C58949B21D13B216009B09F0 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		C58949B31D13B216009B09F0 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 				C58949921D1140D7009B09F0 /* Supporting Files */,
 				C58949AF1D12861E009B09F0 /* InfoViewController.h */,
 				C58949B01D12861E009B09F0 /* InfoViewController.m */,
+				C58949B21D13B216009B09F0 /* ThirdViewController.h */,
+				C58949B31D13B216009B09F0 /* ThirdViewController.m */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				C58949971D1140D7009B09F0 /* AppDelegate.m in Sources */,
 				C58949941D1140D7009B09F0 /* main.m in Sources */,
 				C58949AE1D123A37009B09F0 /* Fraction.m in Sources */,
+				C58949B41D13B216009B09F0 /* ThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
